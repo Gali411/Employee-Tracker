@@ -1,4 +1,4 @@
-# Vehicle Builder
+# Employee Manager
 
   ## Badge
 
@@ -15,7 +15,7 @@
 
   ## Description
 
-  A typescript command-line application that allows users to build and interact with a vehicle.
+  A typescript command-line application that allows users to view existing departments, roles, and employees as well as add onto them.
 
   ## Installation
 
@@ -23,17 +23,18 @@
 
   ## Usage
 
-  The use will be prompted to either create a new vehicle or choose an existing one. If you choose "Select an existing vehicle" then you choose between a premade selection of vehicles. If you chooose to create a new vehicle , you are then prompted to either choose a car, truck, or motorbike. After you choose the characteristics of your vehicle, you can choose among different actions or exit application once you're done. 
+  The use will be prompted to choose from the following options: View all departments, View all roles, View all employees, Add a department, Add a role, Add an employee, Update an employee, or exit. If user chooses to view departments, roles, or employees, they weill be presented a table with data. if they choose to add to these, they will be prompted a series of questions. afterward their input will be added to the table in the database. They will be able to continue working with the appication until they select exit. 
 
   ## Contribution 
-
-  To contribute, plaase reach out if there any any issues  with  the  program, you are free to modify the code is you wish.
+  
+  Contact me if there any any problems with the program or program. You are also free to modify the code if you wish.
 
   ## Tests
 
-  n/a
+  N/A
 
   ## License
+  
   This project uses the Apache.
   Go to https://www.apache.org/licenses/LICENSE-2.0.html to learn more.
 
@@ -44,6 +45,5 @@
 
   ## Video Link 
 
-  https://watch.screencastify.com/v/uneV7R9xQdorSuYdFWSQ
-
+  https://watch.screencastify.com/v/LUIrRIpXrHUxp1ALE4NI
   
