@@ -183,7 +183,7 @@ async function addEmployee(){
         {
             type: 'input',
             name: 'lastName',
-            message:`What is employee's first name?`
+            message:`What is employee's last name?`
         },
         {
             type: 'list',
