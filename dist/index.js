@@ -12,16 +12,19 @@ async function mainMenu() {
     ];
     inquirer.prompt(questions).then((async (anwsers) => {
         if (anwsers.options === 'View all departments') {
-            await viewDepartments();
+            const result = await pool.query("SELECT * FROM department");
+            console.table(result.rows);
             await mainMenu();
         }
         if (anwsers.options === 'View all roles') {
-            await viewRoles();
+            const result = await pool.query("SELECT * FROM role");
+            console.table(result.rows);
             await mainMenu();
         }
         ;
         if (anwsers.options === 'View all employees') {
-            await viewEmployees();
+            const result = await pool.query("SELECT * FROM employee");
+            console.table(result.rows);
             await mainMenu();
         }
         ;
@@ -46,21 +49,6 @@ async function mainMenu() {
         }
         ;
     }));
-}
-;
-async function viewDepartments() {
-    const result = await pool.query("SELECT * FROM department");
-    console.table(result.rows);
-}
-;
-async function viewRoles() {
-    const result = await pool.query("SELECT * FROM role");
-    console.table(result.rows);
-}
-;
-async function viewEmployees() {
-    const result = await pool.query("SELECT * FROM employee");
-    console.table(result.rows);
 }
 ;
 function addDepartment() {
